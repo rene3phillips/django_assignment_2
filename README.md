@@ -1,14 +1,38 @@
 # Hospital Management System
 
-## Application Domain
-This is a Django-based web application that serves as a Hospital Management System.
+This is a Django-based Hospital Management System that implements CRUD operations for patient records. The system allows users to create, read, update, and delete patient information.
+
+
+## Base URL Path
+
+The base URL path for accessing the app's view is:
+```bash
+/records/
+```
+
+## CRUD Operations
+
+### 1. View All Patients
+Navigate to `/records/` to see a complete list of patients.
+
+### 2. View Patient Details
+Navigate to `/records/<int:pk>/` or click on a patient's name to see detailed information of a specific patient.
+
+### 3. Add a New Patient
+Navigate to `/records/create` or click "Add Patient" to add a new patient.
+
+### 4. Update Patient Information
+Navigate to `/records/<int:pk>/update/` or clcik "Update" to update a patient's information.
+
+### 5. Delete a Patient
+Navigate to `/records/<int:pk>/delete/` or click "Delete" to remove a patient from the system.
 
 ## Setup Instructions
 
 ### 1. Clone the repository 
 ```powershell
-git clone https://github.com/rene3phillips/django_assignment_1
-cd django_assignment_1
+git clone https://github.com/rene3phillips/django_assignment_2
+cd django_assignment_2
 ```
 
 ### 2. Create and activate a virtual environment
